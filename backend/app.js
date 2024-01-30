@@ -21,6 +21,10 @@ app.get("/", (req, res) => {
   console.log("working successfully!");
   res.send("working successfully!");
 });
+// routes
+import UserAuthRoute from "./routes/UserAuthRoute.js";
+
+app.use("/api/v1/user", UserAuthRoute);
 
 
 
